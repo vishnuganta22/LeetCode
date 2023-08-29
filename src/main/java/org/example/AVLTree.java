@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class AVLTree {
@@ -118,6 +119,7 @@ public class AVLTree {
         if (node == null) return 0;
 
         int height = 0;
+
         LinkedList<Node> queue = new LinkedList<>();
         queue.add(node);
         while (!queue.isEmpty()) {
